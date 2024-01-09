@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Indie+Flower&family=Kdam+Thmor+Pro&display=swap");
+
+@font-face {
+  font-family: "kdam";
+  src: url(KdamThmorPro-Regular.woff);
+  font-style: bold;
+  font-weight: 100;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  color: white;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+
+  padding: 30px;
+  aspect-ratio: 16 / 9;
+}
+
+img {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+img,
+h3,
+h4 {
+  grid-area: 1 / 1;
+}
+
+h3,
+h4 {
+  color: white;
+  font-size: 7.3cqw;
+  margin-top: 5%;
+  font-family: kdam;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 3.5cqw;
+  margin-top: 15%;
+}
+
+.mark_anthony img {
+  width: 150px;
+  float: left;
+}
+
+.columns,
+.mark_anthony {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+}
+.mark_anthony p {
+  float: left;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.box img {
+  aspect-ratio: 16/9;
+}
+
+@media only screen and (min-width: 850px) {
+  .mark_anthony {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .video_iframe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10%;
+    gap: 10%;
+  }
+}
